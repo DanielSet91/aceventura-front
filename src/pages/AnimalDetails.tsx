@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import {
-  Box,
-  Typography
-} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useToast } from "../hooks/useToast";
 import type { AnimalEvent } from "../types/animal";
 import { eventTypes } from "../types/animal";

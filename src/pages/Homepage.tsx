@@ -14,11 +14,7 @@ import { CustomSpinner } from "../components/CustomSpinner";
 const HomePage = () => {
   const [addOpen, setAddOpen] = useState(false);
   const [form, setForm] = useState({ name: "", species: "Dog", birthDate: "" });
-  const {
-    data: animals = [],
-    isLoading,
-    error,
-  } = useGetAnimalsQuery();
+  const { data: animals = [], isLoading, error } = useGetAnimalsQuery();
   const [addAnimal, { isLoading: formLoading }] = useAddAnimalMutation();
   const { showToast } = useToast();
 
@@ -52,8 +48,6 @@ const HomePage = () => {
     }
   };
 
-  if (error) return <Typography>Failed to load animals</Typography>;
-
   return (
     <Box>
       <HomePageHeader
@@ -66,6 +60,8 @@ const HomePage = () => {
 
       {isLoading ? (
         <CustomSpinner />
+      ) : error ? (
+        <Typography>Failed to load animals</Typography>
       ) : (
         <AnimalGrid
           animals={filteredAnimals}
