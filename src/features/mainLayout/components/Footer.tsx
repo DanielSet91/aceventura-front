@@ -19,7 +19,8 @@ export default function Footer() {
         <PetsRoundedIcon fontSize="small" sx={{ opacity: 0.9 }} />
       </Box>
       <Typography variant="body2" align="center" sx={{ fontWeight: 600 }}>
-        © {new Date().getFullYear()} Ace Ventura Clinic • Caring for pets with heart
+        © {new Date().getFullYear()} Ace Ventura Clinic • Caring for pets with
+        heart
       </Typography>
     </Box>
   );

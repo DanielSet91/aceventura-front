@@ -32,8 +32,7 @@ async function getBinary(endpoint: string): Promise<Blob> {
     throw new Error(`HTTP error! status: ${response.status}`);
   }
 
-  return response.blob(); 
+  return response.blob();
 }
-
 
 export { get, post, getBinary };

@@ -1,6 +1,6 @@
 import { Stack, TextField, InputAdornment, Box } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import {SpeciesFilterChips} from "./SpeciesFilterChips"; 
+import { SpeciesFilterChips } from "./SpeciesFilterChips";
 
 type Props = {
   query: string;

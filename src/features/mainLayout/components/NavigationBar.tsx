@@ -53,7 +53,8 @@ export default function NavigationBar() {
         sx={{
           width: "100%",
           backdropFilter: "blur(10px)",
-          background: "linear-gradient(120deg, rgba(14,165,233,0.85), rgba(139,92,246,0.85))",
+          background:
+            "linear-gradient(120deg, rgba(14,165,233,0.85), rgba(139,92,246,0.85))",
           boxShadow: "0 8px 30px rgba(2,6,23,0.08)",
           position: "relative",
           overflow: "hidden",
@@ -70,7 +71,9 @@ export default function NavigationBar() {
             <MenuIcon />
           </IconButton>
 
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1, flexGrow: 1 }}>
+          <Box
+            sx={{ display: "flex", alignItems: "center", gap: 1, flexGrow: 1 }}
+          >
             <Typography
               variant="h6"
               sx={{ fontWeight: 800, letterSpacing: 0.3 }}

@@ -4,7 +4,7 @@ export interface ToastContextType {
   showToast: (
     message: string,
     type: "success" | "error" | "info" | "warning",
-    duration?: number
+    duration?: number,
   ) => void;
 }
 

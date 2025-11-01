@@ -3,7 +3,7 @@ import { Card, CardContent, Typography, Stack, Chip } from "@mui/material";
 import PetsRoundedIcon from "@mui/icons-material/PetsRounded";
 import CalendarMonthRoundedIcon from "@mui/icons-material/CalendarMonthRounded";
 import EventNoteRoundedIcon from "@mui/icons-material/EventNoteRounded";
-import moment from 'moment';
+import moment from "moment";
 import type { AnimalWithEvents } from "../../types/animal";
 
 interface Props {
@@ -28,10 +28,17 @@ const AnimalCard: React.FC<Props> = ({ animal, showEvents, onClick }) => {
       onClick={onClick}
     >
       <CardContent>
-        <Stack direction="row" alignItems="center" justifyContent="space-between" gap={2}>
+        <Stack
+          direction="row"
+          alignItems="center"
+          justifyContent="space-between"
+          gap={2}
+        >
           <Stack direction="row" alignItems="center" spacing={1.2}>
             <PetsRoundedIcon />
-            <Typography variant="h5" fontWeight={800}>{animal.name}</Typography>
+            <Typography variant="h5" fontWeight={800}>
+              {animal.name}
+            </Typography>
           </Stack>
           <Stack direction="row" spacing={1}>
             <Chip
@@ -47,10 +54,10 @@ const AnimalCard: React.FC<Props> = ({ animal, showEvents, onClick }) => {
             <Typography>Age: {ageYears} years</Typography>
           </Stack>
           {showEvents && (
-          <Stack direction="row" alignItems="center" spacing={1}>
-            <EventNoteRoundedIcon sx={{ opacity: 0.95 }} />
-            <Typography>Events: {animal.events?.length ?? 0}</Typography>
-          </Stack>
+            <Stack direction="row" alignItems="center" spacing={1}>
+              <EventNoteRoundedIcon sx={{ opacity: 0.95 }} />
+              <Typography>Events: {animal.events?.length ?? 0}</Typography>
+            </Stack>
           )}
         </Stack>
       </CardContent>

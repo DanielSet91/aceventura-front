@@ -12,7 +12,7 @@ export const ToastProvider: React.FC<ToastProviderProps> = ({ children }) => {
   const showToast = (
     message: string,
     type: "success" | "error" | "info" | "warning",
-    duration = 3000
+    duration = 3000,
   ) => {
     toast[type](message, { autoClose: duration });
   };

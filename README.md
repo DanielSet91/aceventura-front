@@ -16,20 +16,25 @@ This frontend client allows users to:
 ## 🚀 Getting Started
 
 ### ✅ Prerequisites
+
 - Docker
 - Git
 
 ### 📥 Installation (Docker)
+
 ```bash
 git clone https://github.com/DanielSet91/aceventura-front
 cd aceventura-frontend
 docker-compose build
 docker-compose up
 ```
+
 > **Note:** Ensure a `.env` file exists in the project root with the necessary environment variables.
 
 ### 🌐 Environment Variables
+
 Create a `.env` file if it doesn't exist:
+
 ```
 VITE_API_BASE_URL=http://localhost:3000
 ```
@@ -38,14 +43,14 @@ VITE_API_BASE_URL=http://localhost:3000
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | React, TypeScript, Vite |
-| UI | Material-UI |
-| State | Redux Toolkit + RTK Query |
-| Styling | CSS-in-JS (MUI sx) |
-| Build | Vite |
-| Linting | ESLint, Prettier |
+| Layer    | Technology                |
+| -------- | ------------------------- |
+| Frontend | React, TypeScript, Vite   |
+| UI       | Material-UI               |
+| State    | Redux Toolkit + RTK Query |
+| Styling  | CSS-in-JS (MUI sx)        |
+| Build    | Vite                      |
+| Linting  | ESLint, Prettier          |
 
 ---
 
@@ -65,6 +70,7 @@ src/
 ---
 
 ## ⚠️ Known Limitations
+
 - Excel export works but mobile download UX not fully optimized
 - Search/filter is client-side only
 - Pagination not implemented
@@ -74,15 +80,16 @@ src/
 
 ## 📄 Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Run dev server (for local development without Docker) |
-| `npm run build` | Build production bundle |
-| `npm run lint` | Check code formatting |
-| `npm run lint:fix` | Auto-fix formatting issues |
+| Command            | Description                                           |
+| ------------------ | ----------------------------------------------------- |
+| `npm run dev`      | Run dev server (for local development without Docker) |
+| `npm run build`    | Build production bundle                               |
+| `npm run lint`     | Check code formatting                                 |
+| `npm run lint:fix` | Auto-fix formatting issues                            |
+
 ---
 
 ## 👨‍💻 Contribution
+
 PRs and suggestions are welcome!  
 Follow coding conventions, ESLint, and commit lint rules.
-

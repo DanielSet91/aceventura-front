@@ -3,10 +3,9 @@ import type { Animal, AnimalWithEvents, AnimalEvent } from "../../types/animal";
 
 export const animalsApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
-    
     getAnimals: builder.query<Animal[], void>({
       query: () => "/animals",
-      providesTags: [{ type: "Animals", id: "LIST"}]
+      providesTags: [{ type: "Animals", id: "LIST" }],
     }),
 
     getAnimalById: builder.query<AnimalWithEvents, string>({
@@ -39,5 +38,5 @@ export const {
   useGetAnimalsQuery,
   useGetAnimalByIdQuery,
   useAddAnimalEventMutation,
-  useAddAnimalMutation
+  useAddAnimalMutation,
 } = animalsApi;

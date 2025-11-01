@@ -6,13 +6,17 @@ interface ExportEventsCardProps {
   loading: boolean;
 }
 
-export const ExportEventsCard: React.FC<ExportEventsCardProps> = ({ onDownload, loading }) => {
+export const ExportEventsCard: React.FC<ExportEventsCardProps> = ({
+  onDownload,
+  loading,
+}) => {
   return (
     <Card
       sx={{
         borderRadius: 3,
         boxShadow: 3,
-        background: "linear-gradient(135deg, rgba(14,165,233,0.08) 0%, rgba(139,92,246,0.08) 100%)",
+        background:
+          "linear-gradient(135deg, rgba(14,165,233,0.08) 0%, rgba(139,92,246,0.08) 100%)",
         border: "1px solid rgba(14,165,233,0.2)",
       }}
     >

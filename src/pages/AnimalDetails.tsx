@@ -87,7 +87,7 @@ export default function AnimalDetails() {
     const errorMessage =
       "status" in error
         ? `Error ${error.status}: ${JSON.stringify(error.data)}`
-        : error?.message ?? "Unknown error";
+        : (error?.message ?? "Unknown error");
 
     showToast(`Failed to fetch animal, error: ${errorMessage}`, "error");
     return <ErrorMessage error={errorMessage} />;
